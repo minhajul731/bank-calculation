@@ -18,14 +18,17 @@
         <section class="bg-green-100 w-2/4 mx-auto mt-8 p-6 rounded">
             <h3 class="text-3xl mb-4">Please Login</h3>
             <div>
-                <input type="email" name="" id="" placeholder="your email"
+                <input type="email" name="" id="user-email" placeholder="your email"
                     class="border border-gray-300 rounded px-2 block w-2/4 mb-2 py-1">
-                <input type="password" name="" id="" placeholder="password"
+                <input type="password" name="" id="user-password" placeholder="password"
                     class="border border-gray-300 rounded px-2 block w-2/4 mb-2 py-1">
-                <button class="bg-amber-500 text-white px-4 py-1 rounded font-bold">Submit</button>
+                <button id="submit-button" class="bg-amber-500 text-white px-4 py-1 rounded font-bold">Submit</button>
+                <p id="error-message" class="text-red-600 mt-2 text-center font-bold"></p>
             </div>
         </section>
     </main>
+
+    <script src="js/banking.js"></script>
 </body>
 
 </html>

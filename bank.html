@@ -21,7 +21,7 @@
             <div class="grid grid-cols-3 gap-4 mt-12">
                 <div class="bg-sky-400 p-10 rounded-lg">
                     <h3 class="text-3xl text-white mb-2">Deposite</h3>
-                    <h4 class="text-4xl font-semibold text-white">Tk 00</h4>
+                    <h4 class="text-4xl font-semibold text-white">Tk <span id="deposit-total">00</span></h4>
                 </div>
                 <div class="bg-yellow-400 p-10 rounded-lg">
                     <h3 class="text-3xl text-white mb-2">Withdraw</h3>
@@ -38,14 +38,14 @@
             <div class="grid grid-cols-2 gap-4 mt-10">
                 <div class="bg-indigo-100 p-10 rounded-lg">
                     <h3 class="text-2xl mb-2">Please Deposite</h3>
-                    <input type="email" name="" id="deposite-field" placeholder="Deposite Ammount (৳)"
+                    <input type="number" name="" id="deposite-field" placeholder="Deposite Ammount (৳)"
                         class="border border-gray-300 rounded px-2 block w-2/4 mb-2 py-1">
                     <button id="deposite-button"
                         class="bg-purple-500 text-white px-4 py-1 rounded font-semibold">Deposite</button>
                 </div>
                 <div class="bg-fuchsia-100 p-10 rounded-lg">
                     <h3 class="text-2xl mb-2">Please Withdraw</h3>
-                    <input type="email" name="" id="dwithdraw-field" placeholder="Withdraw Ammount (৳)"
+                    <input type="number" name="" id="dwithdraw-field" placeholder="Withdraw Ammount (৳)"
                         class="border border-gray-300 rounded px-2 block w-2/4 mb-2 py-1">
                     <button id="withdraw-button"
                         class="bg-purple-500 text-white px-4 py-1 rounded font-semibold">Withdraw</button>
@@ -53,6 +53,8 @@
             </div>
         </section>
     </main>
+
+    <script src="js/bank.js"></script>
 </body>
 
 </html>

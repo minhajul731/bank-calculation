@@ -1,3 +1,4 @@
+// login handaler
 document.getElementById('submit-button').addEventListener('click', function () {
     // email field value
     const emailField = document.getElementById('user-email');

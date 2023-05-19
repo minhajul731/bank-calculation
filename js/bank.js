@@ -22,4 +22,29 @@ document.getElementById('deposite-button').addEventListener('click', function ()
     // reset the deposite input field
     depositeField.value = '';
 
-})
+});
+
+// withdraw handle
+document.getElementById('withdraw-button').addEventListener('click', function () {
+    // get withdraw ammount
+    const withdrawAmmount = document.getElementById('dwithdraw-field');
+    const inputWithdrawText = withdrawAmmount.value;
+    const inputWithdrawAmmount = parseFloat(inputWithdrawText);
+
+    // set Withdraw ammount
+    const withdrawTotal = document.getElementById('withdraw-total');
+    const previousWithdrawTotalText = withdrawTotal.innerText;
+    const previousWithdrawTotal = parseFloat(previousWithdrawTotalText);
+    const totalWithdrawAmmount = previousWithdrawTotal + inputWithdrawAmmount;
+    withdrawTotal.innerText = totalWithdrawAmmount;
+
+    // update account balance
+    const totalBalance = document.getElementById('balance-total');
+    const totalBalanceText = totalBalance.innerText;
+    const previousTotalBalance = parseFloat(totalBalanceText);
+    const updateTotalBalance = previousTotalBalance - inputWithdrawAmmount;
+    totalBalance.innerText = updateTotalBalance;
+
+    // reset the withdraw input field
+    withdrawAmmount.value = '';
+});
